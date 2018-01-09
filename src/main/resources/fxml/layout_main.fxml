@@ -1,4 +1,329 @@
-<?import javafx.scene.layout.GridPane?>
-<GridPane fx:controller="com.modeling.cw.controllers.MainController"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="5" vgap="5">
-</GridPane>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+  <top>
+    <MenuBar BorderPane.alignment="CENTER">
+      <Menu mnemonicParsing="false" text="File">
+        <MenuItem mnemonicParsing="false" text="Close"/>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Edit">
+        <MenuItem mnemonicParsing="false" text="Delete"/>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Help">
+        <MenuItem mnemonicParsing="false" text="About"/>
+      </Menu>
+    </MenuBar>
+  </top>
+  <center>
+    <HBox alignment="CENTER_LEFT" BorderPane.alignment="CENTER">
+      <TabPane maxHeight="1.7976931348623157E308" side="LEFT" tabClosingPolicy="UNAVAILABLE">
+        <Tab text="Микропрограмма">
+          <VBox alignment="CENTER">
+            <ImageView fitHeight="520.0" fitWidth="453.0" pickOnBounds="true">
+              <Image url="@../img/19.jpg"/>
+            </ImageView>
+          </VBox>
+        </Tab>
+        <Tab text="Взаимодействие УА и ОА">
+          <VBox alignment="CENTER">
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true"/>
+          </VBox>
+        </Tab>
+      </TabPane>
+      <HBox alignment="CENTER">
+        <GridPane alignment="CENTER" hgap="5.0" maxHeight="-Infinity" vgap="5.0">
+          <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity"
+                               prefWidth="30.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity"/>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity"/>
+            <ColumnConstraints hgrow="SOMETIMES"/>
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints vgrow="SOMETIMES"/>
+            <RowConstraints vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES"/>
+            <RowConstraints vgrow="SOMETIMES"/>
+            <RowConstraints vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES"/>
+            <RowConstraints vgrow="SOMETIMES"/>
+            <RowConstraints vgrow="SOMETIMES"/>
+            <RowConstraints vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES"/>
+            <RowConstraints vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES"/>
+          </rowConstraints>
+          <Label alignment="CENTER" text="Исходные данные" GridPane.columnSpan="2">
+            <font>
+              <Font name="System Bold" size="18.0"/>
+            </font>
+          </Label>
+          <Label text="Множимое" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <font>
+              <Font name="System Italic" size="14.0"/>
+            </font>
+          </Label>
+          <Label text="A10" GridPane.rowIndex="3"/>
+          <TextField editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+          <Label text="A2" GridPane.rowIndex="2"/>
+          <TableView maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <columns>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="15"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="14"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="13"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="12"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="11"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="10"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="9"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="8"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="7"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="6"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="5"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="4"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="3"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="2"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="1"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="0"/>
+            </columns>
+          </TableView>
+          <TableView maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <columns>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="15"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="14"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="13"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="12"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="11"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="10"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="9"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="8"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="7"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="6"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="5"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="4"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="3"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="2"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="1"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="0"/>
+            </columns>
+            <columnResizePolicy>
+              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+          </TableView>
+          <Label text="Множитель" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <font>
+              <Font name="System Italic" size="14.0"/>
+            </font>
+          </Label>
+          <Label text="B2" GridPane.rowIndex="5"/>
+          <Label text="B10" GridPane.rowIndex="6"/>
+          <TextField editable="false" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+          <GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" vgap="5.0" GridPane.columnIndex="2"
+                    GridPane.columnSpan="2" GridPane.rowSpan="7">
+            <columnConstraints>
+              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES"/>
+              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES"/>
+            </columnConstraints>
+            <rowConstraints>
+              <RowConstraints vgrow="SOMETIMES"/>
+              <RowConstraints vgrow="SOMETIMES"/>
+              <RowConstraints vgrow="SOMETIMES"/>
+              <RowConstraints vgrow="SOMETIMES"/>
+              <RowConstraints vgrow="SOMETIMES"/>
+              <RowConstraints vgrow="SOMETIMES"/>
+              <RowConstraints vgrow="SOMETIMES"/>
+              <RowConstraints vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <Label text="Режим выполнения" GridPane.columnSpan="2">
+              <font>
+                <Font name="System Italic" size="14.0"/>
+              </font>
+            </Label>
+            <Label text="Уровень моделирования ОУ" GridPane.columnSpan="2" GridPane.rowIndex="3"/>
+            <Label text="Управление вычислением" GridPane.columnSpan="2" GridPane.rowIndex="6"/>
+            <Button mnemonicParsing="false" text="Пуск" GridPane.rowIndex="7">
+              <font>
+                <Font name="System Bold" size="14.0"/>
+              </font>
+            </Button>
+            <Button mnemonicParsing="false" text="Сброс" GridPane.columnIndex="1" GridPane.rowIndex="7">
+              <font>
+                <Font name="System Bold" size="14.0"/>
+              </font>
+            </Button>
+            <RadioButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" selected="true"
+                         text="Автоматический" GridPane.columnSpan="2" GridPane.rowIndex="1">
+              <toggleGroup>
+                <ToggleGroup fx:id="exeMode"/>
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Пошаговый"
+                         toggleGroup="$exeMode" GridPane.columnSpan="2" GridPane.rowIndex="2"/>
+            <RadioButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" selected="true"
+                         text="Микропрограмма" GridPane.columnSpan="2" GridPane.rowIndex="4">
+              <toggleGroup>
+                <ToggleGroup fx:id="modelingLevel"/>
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Взаимодействие УА и ОА"
+                         toggleGroup="$modelingLevel" GridPane.columnSpan="2" GridPane.rowIndex="5"/>
+          </GridPane>
+          <Label alignment="CENTER" text="Ход вычисления" GridPane.columnSpan="2" GridPane.rowIndex="7">
+            <font>
+              <Font name="System Bold" size="18.0"/>
+            </font>
+          </Label>
+          <Label text="Регистр множимого" GridPane.columnIndex="1" GridPane.rowIndex="8">
+            <font>
+              <Font name="System Italic" size="14.0"/>
+            </font>
+          </Label>
+          <Label text="A2" GridPane.rowIndex="9"/>
+          <TableView maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="9">
+            <columns>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="15"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="14"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="13"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="12"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="11"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="10"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="9"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="8"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="7"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="6"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="5"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="4"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="3"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="2"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="1"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="0"/>
+            </columns>
+          </TableView>
+          <Label text="Регистр множителя" GridPane.columnIndex="1" GridPane.rowIndex="10">
+            <font>
+              <Font name="System Italic" size="14.0"/>
+            </font>
+          </Label>
+          <Label text="B2" GridPane.rowIndex="11"/>
+          <TableView maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="11">
+            <columns>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="15"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="14"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="13"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="12"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="11"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="10"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="9"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="8"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="7"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="6"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="5"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="4"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="3"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="2"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="1"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="0"/>
+            </columns>
+            <columnResizePolicy>
+              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+          </TableView>
+          <Label text="Регистр произведения" GridPane.columnIndex="1" GridPane.rowIndex="12">
+            <font>
+              <Font name="System Italic" size="14.0"/>
+            </font>
+          </Label>
+          <Label text="C2" GridPane.rowIndex="13"/>
+          <TableView maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="13">
+            <columns>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="30"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="29"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="28"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="27"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="26"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="25"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="24"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="23"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="22"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="21"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="20"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="19"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="18"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="17"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="16"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="15"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="14"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="13"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="12"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="11"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="10"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="9"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="8"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="7"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="6"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="5"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="4"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="3"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="2"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="1"/>
+              <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="0"/>
+            </columns>
+            <columnResizePolicy>
+              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+          </TableView>
+          <Label text="Результат" GridPane.columnSpan="2" GridPane.rowIndex="14">
+            <font>
+              <Font name="System Bold" size="18.0"/>
+            </font>
+          </Label>
+          <Label text="С10" GridPane.rowIndex="15"/>
+          <TextField editable="false" GridPane.columnIndex="1" GridPane.rowIndex="15"/>
+          <GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" vgap="5.0" GridPane.columnIndex="2"
+                    GridPane.columnSpan="2" GridPane.rowIndex="8" GridPane.rowSpan="2">
+            <columnConstraints>
+              <ColumnConstraints hgrow="SOMETIMES"/>
+              <ColumnConstraints hgrow="SOMETIMES"/>
+              <ColumnConstraints/>
+            </columnConstraints>
+            <rowConstraints>
+              <RowConstraints vgrow="SOMETIMES"/>
+              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <Label text="Регистр счетчика" GridPane.columnIndex="1" GridPane.columnSpan="2">
+              <font>
+                <Font name="System Italic" size="14.0"/>
+              </font>
+            </Label>
+            <TableView maxWidth="60.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" text="2"/>
+                <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" text="1"/>
+                <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" text="0"/>
+              </columns>
+              <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+              </columnResizePolicy>
+            </TableView>
+            <Label text="СЧ" GridPane.rowIndex="1"/>
+          </GridPane>
+          <HBox.margin>
+            <Insets/>
+          </HBox.margin>
+          <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+          </padding>
+        </GridPane>
+      </HBox>
+    </HBox>
+  </center>
+</BorderPane>

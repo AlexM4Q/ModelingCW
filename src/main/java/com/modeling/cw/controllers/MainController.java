@@ -1,4 +1,12 @@
 package com.modeling.cw.controllers;
 
-public class MainController {
+import javafx.fxml.FXML;
+
+public final class MainController {
+
+    @FXML
+    public void initialize() {
+
+    }
+
 }
