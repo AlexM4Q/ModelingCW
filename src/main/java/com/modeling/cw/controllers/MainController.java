@@ -2,9 +2,10 @@ package com.modeling.cw.controllers;
 
 import com.modeling.cw.constants.ExeMode;
 import com.modeling.cw.constants.ModelingLevel;
-import com.modeling.cw.models.rows.Register16Row;
-import com.modeling.cw.models.rows.Register31Row;
-import com.modeling.cw.models.rows.Register3Row;
+import com.modeling.cw.entities.rows.Register16Row;
+import com.modeling.cw.entities.rows.Register31Row;
+import com.modeling.cw.entities.rows.Register3Row;
+import com.modeling.cw.utils.UiUtils;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
@@ -45,6 +46,14 @@ public final class MainController {
         b2Process_TV.getItems().add(new Register16Row());
         c2Result_TV.getItems().add(new Register31Row());
         ch2Process_TV.getItems().add(new Register3Row());
+
+        UiUtils.prepareRegisterTable(a2Input_TV, () -> convertBinaryToDecimal(a2Input_TV, a10Input_TF));
+        UiUtils.prepareRegisterTable(b2Input_TV, () -> convertBinaryToDecimal(b2Input_TV, b10Input_TF));
+    }
+
+    private void convertBinaryToDecimal(TableView<Register16Row> table, TextField textField) {
+        String value = String.valueOf(table.getItems().get(0).toInt());
+        textField.setText(value);
     }
 
     @FXML

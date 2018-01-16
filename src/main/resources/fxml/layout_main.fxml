@@ -183,7 +183,7 @@
                 <Font name="System Italic" size="14.0"/>
               </font>
             </Label>
-            <fx:include source="item_3_register_table_view.fxml" fx:id="ch2Process_TV" maxWidth="60.0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <fx:include source="item_3_register_table_view.fxml" fx:id="ch2Process_TV" maxWidth="62.0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
             <Label text="СЧ₂" GridPane.rowIndex="1"/>
           </GridPane>
           <HBox.margin>

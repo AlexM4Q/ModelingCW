@@ -2,7 +2,8 @@
 
 <?import javafx.scene.control.cell.*?>
 <?import javafx.scene.control.*?>
-<TableView maxWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<TableView xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+           maxWidth="-Infinity" stylesheets="@../css/register-table-view-styles.css">
   <columns>
     <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="15">
       <cellValueFactory>

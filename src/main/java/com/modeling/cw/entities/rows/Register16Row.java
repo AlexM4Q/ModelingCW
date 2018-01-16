@@ -1,5 +1,7 @@
-package com.modeling.cw.models.rows;
+package com.modeling.cw.entities.rows;
 
+import com.modeling.cw.utils.MathUtils;
+import com.modeling.cw.utils.ReflectionUtils;
 import javafx.beans.property.SimpleIntegerProperty;
 
 public final class Register16Row {
@@ -38,6 +40,18 @@ public final class Register16Row {
         this.col2 = new SimpleIntegerProperty(0);
         this.col1 = new SimpleIntegerProperty(0);
         this.col0 = new SimpleIntegerProperty(0);
+    }
+
+    public int[] toArray() {
+        final int[] arr = new int[16];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = ReflectionUtils.getCol(this, i);
+        }
+        return arr;
+    }
+
+    public double toInt() {
+        return MathUtils.binaryToDouble(toArray());
     }
 
     public int getCol15() {

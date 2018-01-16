@@ -1,4 +1,4 @@
-package com.modeling.cw.models.rows;
+package com.modeling.cw.entities.rows;
 
 import javafx.beans.property.SimpleIntegerProperty;
 
