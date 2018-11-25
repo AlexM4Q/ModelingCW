@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="ModelingCW">
+    <output-path>$PROJECT_DIR$/out/artifacts/ModelingCW</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="com.modeling.cw.App" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="Modeling" />
+        <option name="vendor" value="Oracle Corporation" />
+        <option name="version" value="1.0.0" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="ModelingCW.jar">
+        <element id="module-output" name="ModelingCW" />
+      </element>
+    </root>
+  </artifact>
+</component>
