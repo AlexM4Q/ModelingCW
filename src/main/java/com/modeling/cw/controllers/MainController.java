@@ -2,9 +2,11 @@ package com.modeling.cw.controllers;
 
 import com.modeling.cw.constants.ExeMode;
 import com.modeling.cw.constants.ModelingLevel;
+import com.modeling.cw.entities.logic.MicroProgram;
 import com.modeling.cw.entities.rows.Register16Row;
 import com.modeling.cw.entities.rows.Register31Row;
 import com.modeling.cw.entities.rows.Register3Row;
+import com.modeling.cw.utils.MathUtils;
 import com.modeling.cw.utils.UiUtils;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -51,9 +53,8 @@ public final class MainController {
         UiUtils.prepareRegisterTable(b2Input_TV, () -> convertBinaryToDecimal(b2Input_TV, b10Input_TF));
     }
 
-    private void convertBinaryToDecimal(TableView<Register16Row> table, TextField textField) {
-        String value = String.valueOf(table.getItems().get(0).toInt());
-        textField.setText(value);
+    private void convertBinaryToDecimal(final TableView<Register16Row> table, final TextField textField) {
+        textField.setText(String.valueOf(table.getItems().get(0).toInt()));
     }
 
     @FXML
@@ -63,7 +64,12 @@ public final class MainController {
 
     @FXML
     private void processControl_B_action() {
+        final byte[] aBinary = a2Input_TV.getItems().get(0).toArray();
+        final byte[] bBinary = b2Input_TV.getItems().get(0).toArray();
+        final byte[] execute = new MicroProgram(aBinary, bBinary).execute();
 
+        c2Result_TF.setText(String.valueOf(MathUtils.binaryToDouble(aBinary) * MathUtils.binaryToDouble(bBinary)));
+        c2Result_TV.getItems().get(0).set(execute);
     }
 
     @FXML

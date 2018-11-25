@@ -42,10 +42,10 @@ public final class Register16Row {
         this.col0 = new SimpleIntegerProperty(0);
     }
 
-    public int[] toArray() {
-        final int[] arr = new int[16];
+    public byte[] toArray() {
+        final byte[] arr = new byte[16];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = ReflectionUtils.getCol(this, i);
+            arr[i] = (byte) ReflectionUtils.getCol(this, i);
         }
         return arr;
     }

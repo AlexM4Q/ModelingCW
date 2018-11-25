@@ -317,4 +317,38 @@ public final class Register31Row {
     public void setCol0(int col0) {
         this.col0.set(col0);
     }
+
+    public void set(final byte[] execute) {
+        setCol0(execute[0]);
+        setCol1(execute[1]);
+        setCol2(execute[2]);
+        setCol3(execute[3]);
+        setCol4(execute[4]);
+        setCol5(execute[5]);
+        setCol6(execute[6]);
+        setCol7(execute[7]);
+        setCol8(execute[8]);
+        setCol9(execute[9]);
+        setCol10(execute[10]);
+        setCol11(execute[11]);
+        setCol12(execute[12]);
+        setCol13(execute[13]);
+        setCol14(execute[14]);
+        setCol15(execute[15]);
+        setCol16(execute[16]);
+        setCol17(execute[17]);
+        setCol18(execute[18]);
+        setCol19(execute[19]);
+        setCol20(execute[20]);
+        setCol21(execute[21]);
+        setCol22(execute[22]);
+        setCol23(execute[23]);
+        setCol24(execute[24]);
+        setCol25(execute[25]);
+        setCol26(execute[26]);
+        setCol27(execute[27]);
+        setCol28(execute[28]);
+        setCol29(execute[29]);
+        setCol30(execute[30]);
+    }
 }

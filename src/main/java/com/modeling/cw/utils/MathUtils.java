@@ -8,7 +8,7 @@ public final class MathUtils {
      * @param binary массив битов
      * @return чттсло в диапазоне [0; 0.5]
      */
-    public static double binaryToDouble(int[] binary) {
+    public static double binaryToDouble(final byte[] binary) {
         final int correction = binary.length - 1;
 
         double decimal = 0;
