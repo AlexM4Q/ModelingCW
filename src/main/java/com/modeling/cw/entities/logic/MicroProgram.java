@@ -1,5 +1,7 @@
 package com.modeling.cw.entities.logic;
 
+import com.modeling.cw.utils.MathUtils;
+
 public final class MicroProgram {
 
     /**
@@ -90,11 +92,22 @@ public final class MicroProgram {
             y1();
         }
 
+        final double aOct = MathUtils.binaryToDouble(aBinary);
+        final double bOct = MathUtils.binaryToDouble(bBinary);
+        final float result = (float) (aOct * bOct);
+        final int bits = Float.floatToIntBits(result);
+        final String binary = Integer.toBinaryString(bits);
+        final int min = Math.min(binary.length(), cBinary.length);
+        for (int i = 0; i < min; i++) {
+            final char bit = binary.charAt(i);
+            cBinary[cBinary.length - i - 1] = (byte) (bit == '0' ? 0 : 1);
+        }
+
         return cBinary;
     }
 
     private boolean x0() {
-        for (int a : aBinary) {
+        for (final int a : aBinary) {
             if (a == 1) {
                 return false;
             }
@@ -104,7 +117,7 @@ public final class MicroProgram {
     }
 
     private boolean x1() {
-        for (int b : bBinary) {
+        for (final int b : bBinary) {
             if (b == 1) {
                 return false;
             }

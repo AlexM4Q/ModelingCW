@@ -91,6 +91,9 @@ public class Register16Row extends Register3Row {
             case 4:
                 setCol4(value);
                 break;
+            case 3:
+                setCol3(value);
+                break;
             default:
                 super.set(index, value);
         }

@@ -4,7 +4,7 @@
     <properties id="javafx-properties">
       <options>
         <option name="appClass" value="com.modeling.cw.App" />
-        <option name="description" value="" />
+        <option name="description" value="Modeling course work" />
         <option name="htmlPlaceholderId" value="" />
         <option name="title" value="Modeling" />
         <option name="vendor" value="Oracle Corporation" />

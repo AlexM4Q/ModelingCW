@@ -83,8 +83,12 @@ public final class MainController {
         final byte[] bBinary = b2Input_TV.getItems().get(0).toArray();
         final byte[] execute = new MicroProgram(aBinary, bBinary).execute();
 
-        c2Result_TF.setText(String.valueOf(MathUtils.binaryToDouble(aBinary) * MathUtils.binaryToDouble(bBinary)));
+        final double aOct = MathUtils.binaryToDouble(aBinary);
+        final double bOct = MathUtils.binaryToDouble(bBinary);
+        final float result = (float) (aOct * bOct);
+        c2Result_TF.setText(String.valueOf(result));
         c2Result_TV.getItems().get(0).set(execute);
+        c2Result_TV.refresh();
     }
 
     @FXML
