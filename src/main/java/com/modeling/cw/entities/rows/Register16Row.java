@@ -1,10 +1,9 @@
 package com.modeling.cw.entities.rows;
 
 import com.modeling.cw.utils.MathUtils;
-import com.modeling.cw.utils.ReflectionUtils;
 import javafx.beans.property.SimpleIntegerProperty;
 
-public final class Register16Row {
+public class Register16Row extends Register3Row {
 
     private final SimpleIntegerProperty col15;
     private final SimpleIntegerProperty col14;
@@ -19,11 +18,9 @@ public final class Register16Row {
     private final SimpleIntegerProperty col5;
     private final SimpleIntegerProperty col4;
     private final SimpleIntegerProperty col3;
-    private final SimpleIntegerProperty col2;
-    private final SimpleIntegerProperty col1;
-    private final SimpleIntegerProperty col0;
 
     public Register16Row() {
+        super();
         this.col15 = new SimpleIntegerProperty(0);
         this.col14 = new SimpleIntegerProperty(0);
         this.col13 = new SimpleIntegerProperty(0);
@@ -37,16 +34,86 @@ public final class Register16Row {
         this.col5 = new SimpleIntegerProperty(0);
         this.col4 = new SimpleIntegerProperty(0);
         this.col3 = new SimpleIntegerProperty(0);
-        this.col2 = new SimpleIntegerProperty(0);
-        this.col1 = new SimpleIntegerProperty(0);
-        this.col0 = new SimpleIntegerProperty(0);
+    }
+
+    public void clear() {
+        setCol15(0);
+        setCol14(0);
+        setCol13(0);
+        setCol12(0);
+        setCol11(0);
+        setCol10(0);
+        setCol9(0);
+        setCol8(0);
+        setCol7(0);
+        setCol6(0);
+        setCol5(0);
+        setCol4(0);
+        setCol3(0);
+        super.clear();
+    }
+
+    public void set(final int index, final int value) {
+        switch (index) {
+            case 15:
+                setCol15(value);
+                break;
+            case 14:
+                setCol14(value);
+                break;
+            case 13:
+                setCol13(value);
+                break;
+            case 12:
+                setCol12(value);
+                break;
+            case 11:
+                setCol11(value);
+                break;
+            case 10:
+                setCol10(value);
+                break;
+            case 9:
+                setCol9(value);
+                break;
+            case 8:
+                setCol8(value);
+                break;
+            case 7:
+                setCol7(value);
+                break;
+            case 6:
+                setCol6(value);
+                break;
+            case 5:
+                setCol5(value);
+                break;
+            case 4:
+                setCol4(value);
+                break;
+            default:
+                super.set(index, value);
+        }
     }
 
     public byte[] toArray() {
         final byte[] arr = new byte[16];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = (byte) ReflectionUtils.getCol(this, i);
-        }
+        arr[0] = (byte) getCol0();
+        arr[1] = (byte) getCol1();
+        arr[2] = (byte) getCol2();
+        arr[3] = (byte) getCol3();
+        arr[4] = (byte) getCol4();
+        arr[5] = (byte) getCol5();
+        arr[6] = (byte) getCol6();
+        arr[7] = (byte) getCol7();
+        arr[8] = (byte) getCol8();
+        arr[9] = (byte) getCol9();
+        arr[10] = (byte) getCol10();
+        arr[11] = (byte) getCol11();
+        arr[12] = (byte) getCol12();
+        arr[13] = (byte) getCol13();
+        arr[14] = (byte) getCol14();
+        arr[15] = (byte) getCol15();
         return arr;
     }
 
@@ -156,30 +223,6 @@ public final class Register16Row {
 
     public void setCol3(int col3) {
         this.col3.set(col3);
-    }
-
-    public int getCol2() {
-        return col2.get();
-    }
-
-    public void setCol2(int col2) {
-        this.col2.set(col2);
-    }
-
-    public int getCol1() {
-        return col1.get();
-    }
-
-    public void setCol1(int col1) {
-        this.col1.set(col1);
-    }
-
-    public int getCol0() {
-        return col0.get();
-    }
-
-    public void setCol0(int col0) {
-        this.col0.set(col0);
     }
 
 }

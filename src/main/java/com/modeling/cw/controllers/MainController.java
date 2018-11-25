@@ -53,13 +53,28 @@ public final class MainController {
         UiUtils.prepareRegisterTable(b2Input_TV, () -> convertBinaryToDecimal(b2Input_TV, b10Input_TF));
     }
 
-    private void convertBinaryToDecimal(final TableView<Register16Row> table, final TextField textField) {
-        textField.setText(String.valueOf(table.getItems().get(0).toInt()));
-    }
-
     @FXML
     private void clear_B_action() {
+        a2Input_TV.getItems().get(0).clear();
+        a2Input_TV.refresh();
+        a10Input_TF.clear();
 
+        b2Input_TV.getItems().get(0).clear();
+        b2Input_TV.refresh();
+        b10Input_TF.clear();
+
+        a2Process_TV.getItems().get(0).clear();
+        a2Process_TV.refresh();
+
+        b2Process_TV.getItems().get(0).clear();
+        b2Process_TV.refresh();
+
+        c2Result_TV.getItems().get(0).clear();
+        c2Result_TV.refresh();
+        c2Result_TF.clear();
+
+        ch2Process_TV.getItems().get(0).clear();
+        ch2Process_TV.refresh();
     }
 
     @FXML
@@ -92,6 +107,10 @@ public final class MainController {
     @FXML
     private void modelingLevelUAOA_RB_action() {
         modelingLevel = ModelingLevel.UAOA;
+    }
+
+    private static void convertBinaryToDecimal(final TableView<Register16Row> table, final TextField textField) {
+        textField.setText(String.valueOf(table.getItems().get(0).toInt()));
     }
 
 }

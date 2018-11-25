@@ -1,6 +1,6 @@
 package com.modeling.cw.entities.logic;
 
-public class MicroProgram {
+public final class MicroProgram {
 
     /**
      * Множимое

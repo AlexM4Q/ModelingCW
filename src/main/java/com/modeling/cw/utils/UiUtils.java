@@ -16,7 +16,7 @@ public final class UiUtils {
             cell.setText(ZERO);
             cell.setOnMouseClicked(event -> {
                 final int newValue = cell.getText().equals(ZERO) ? 1 : 0;
-                ReflectionUtils.setCol(register16Row, number, newValue);
+                register16Row.set(number, newValue);
                 cell.setText(String.valueOf(newValue));
                 task.run();
             });
