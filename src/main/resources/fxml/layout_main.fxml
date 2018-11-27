@@ -6,194 +6,195 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.modeling.cw.controllers.MainController">
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.modeling.cw.controllers.MainController">
   <top>
     <MenuBar BorderPane.alignment="CENTER">
       <Menu mnemonicParsing="false" text="Файл">
-        <MenuItem mnemonicParsing="false" text="Выход"/>
+        <MenuItem mnemonicParsing="false" text="Выход" />
       </Menu>
       <Menu mnemonicParsing="false" text="Помощь">
-        <MenuItem mnemonicParsing="false" text="О программе"/>
+        <MenuItem mnemonicParsing="false" text="О программе" />
       </Menu>
     </MenuBar>
   </top>
   <center>
-    <HBox alignment="CENTER_LEFT" BorderPane.alignment="CENTER">
-      <TabPane maxHeight="1.7976931348623157E308" side="LEFT" tabClosingPolicy="UNAVAILABLE">
-        <Tab text="Микропрограмма">
-          <VBox alignment="CENTER">
-            <ImageView fitHeight="520.0" fitWidth="453.0" pickOnBounds="true">
-              <Image url="@../img/19.jpg"/>
-            </ImageView>
-          </VBox>
-        </Tab>
-        <Tab text="Взаимодействие УА и ОА">
-          <VBox alignment="CENTER">
-            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true"/>
-          </VBox>
-        </Tab>
-      </TabPane>
-      <HBox alignment="CENTER">
-        <GridPane alignment="CENTER" hgap="5.0" maxHeight="-Infinity" vgap="5.0">
+    <HBox alignment="CENTER_LEFT">
+      <children>
+        <TabPane maxHeight="1.7976931348623157E308" side="LEFT" tabClosingPolicy="UNAVAILABLE" HBox.hgrow="ALWAYS">
+          <Tab text="Микропрограмма">
+            <VBox alignment="CENTER">
+              <ImageView pickOnBounds="true" preserveRatio="true">
+                <Image url="@../img/marked.png" />
+              </ImageView>
+            </VBox>
+          </Tab>
+          <Tab text="Взаимодействие УА и ОА">
+            <VBox alignment="CENTER">
+              <ImageView pickOnBounds="true" preserveRatio="true">
+                <image>
+                  <Image url="@../img/structure.jpg" />
+                </image>
+              </ImageView>
+            </VBox>
+          </Tab>
+        </TabPane>
+        <GridPane alignment="CENTER" hgap="5.0" maxHeight="-Infinity" vgap="5.0" HBox.hgrow="ALWAYS">
           <columnConstraints>
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="30.0"/>
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity"/>
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity"/>
-            <ColumnConstraints hgrow="SOMETIMES"/>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" />
           </columnConstraints>
           <rowConstraints>
-            <RowConstraints vgrow="SOMETIMES"/>
-            <RowConstraints vgrow="SOMETIMES"/>
-            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES"/>
-            <RowConstraints vgrow="SOMETIMES"/>
-            <RowConstraints vgrow="SOMETIMES"/>
-            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES"/>
-            <RowConstraints vgrow="SOMETIMES"/>
-            <RowConstraints vgrow="SOMETIMES"/>
-            <RowConstraints vgrow="SOMETIMES"/>
-            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES"/>
-            <RowConstraints vgrow="SOMETIMES"/>
-            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES"/>
-            <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES"/>
-            <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES"/>
-            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES"/>
-            <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES"/>
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES" />
           </rowConstraints>
           <Label alignment="CENTER" text="Исходные данные" GridPane.columnSpan="2">
             <font>
-              <Font name="System Bold" size="18.0"/>
+              <Font name="System Bold" size="18.0" />
             </font>
           </Label>
           <Label text="Множимое" GridPane.columnIndex="1" GridPane.rowIndex="1">
             <font>
-              <Font name="System Italic" size="14.0"/>
+              <Font name="System Italic" size="14.0" />
             </font>
           </Label>
-          <Label text="A₁₀" GridPane.rowIndex="3"/>
-          <TextField fx:id="a10Input_TF" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-          <Label text="A₂" GridPane.rowIndex="2"/>
-          <fx:include fx:id="a2Input_TV" source="item_16_register_table_view.fxml" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-          <fx:include fx:id="b2Input_TV" source="item_16_register_table_view.fxml" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+          <Label text="A₁₀" GridPane.rowIndex="3" />
+          <TextField fx:id="a10Input_TF" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+          <Label text="A₂" GridPane.rowIndex="2" />
+          <fx:include fx:id="a2Input_TV" source="item_16_register_table_view.fxml" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+          <fx:include fx:id="b2Input_TV" source="item_16_register_table_view.fxml" GridPane.columnIndex="1" GridPane.rowIndex="5" />
           <Label text="Множитель" GridPane.columnIndex="1" GridPane.rowIndex="4">
             <font>
-              <Font name="System Italic" size="14.0"/>
+              <Font name="System Italic" size="14.0" />
             </font>
           </Label>
-          <Label text="B₂" GridPane.rowIndex="5"/>
-          <Label text="B₁₀" GridPane.rowIndex="6"/>
-          <TextField fx:id="b10Input_TF" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+          <Label text="B₂" GridPane.rowIndex="5" />
+          <Label text="B₁₀" GridPane.rowIndex="6" />
+          <TextField fx:id="b10Input_TF" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="6" />
           <GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="5.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowSpan="7">
             <columnConstraints>
-              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="-Infinity" minWidth="-Infinity"/>
-              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="-Infinity" minWidth="-Infinity"/>
+              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="-Infinity" minWidth="-Infinity" />
+              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="-Infinity" minWidth="-Infinity" />
             </columnConstraints>
             <rowConstraints>
-              <RowConstraints vgrow="SOMETIMES"/>
-              <RowConstraints vgrow="SOMETIMES"/>
-              <RowConstraints vgrow="SOMETIMES"/>
-              <RowConstraints vgrow="SOMETIMES"/>
-              <RowConstraints vgrow="SOMETIMES"/>
-              <RowConstraints vgrow="SOMETIMES"/>
-              <RowConstraints vgrow="SOMETIMES"/>
-              <RowConstraints vgrow="SOMETIMES"/>
+              <RowConstraints vgrow="SOMETIMES" />
+              <RowConstraints vgrow="SOMETIMES" />
+              <RowConstraints vgrow="SOMETIMES" />
+              <RowConstraints vgrow="SOMETIMES" />
+              <RowConstraints vgrow="SOMETIMES" />
+              <RowConstraints vgrow="SOMETIMES" />
+              <RowConstraints vgrow="SOMETIMES" />
+              <RowConstraints vgrow="SOMETIMES" />
             </rowConstraints>
             <Label minHeight="-Infinity" minWidth="-Infinity" text="Режим выполнения" GridPane.columnSpan="2">
               <font>
-                <Font name="System Italic" size="14.0"/>
+                <Font name="System Italic" size="14.0" />
               </font>
             </Label>
             <Label minHeight="-Infinity" minWidth="-Infinity" text="Уровень моделирования ОУ" GridPane.columnSpan="2" GridPane.rowIndex="3">
               <font>
-                <Font name="System Italic" size="14.0"/>
+                <Font name="System Italic" size="14.0" />
               </font>
             </Label>
             <Label minHeight="-Infinity" minWidth="-Infinity" text="Управление вычислением" GridPane.columnSpan="2" GridPane.rowIndex="6">
               <font>
-                <Font name="System Italic" size="14.0"/>
+                <Font name="System Italic" size="14.0" />
               </font>
             </Label>
             <Button fx:id="processControl_B" mnemonicParsing="false" onAction="#processControl_B_action" text="Пуск" GridPane.rowIndex="7">
               <font>
-                <Font name="System Bold" size="14.0"/>
+                <Font name="System Bold" size="14.0" />
               </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#clear_B_action" text="Сброс" GridPane.columnIndex="1" GridPane.rowIndex="7">
               <font>
-                <Font name="System Bold" size="14.0"/>
+                <Font name="System Bold" size="14.0" />
               </font>
             </Button>
             <RadioButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#exeModeAuto_RB_action" selected="true" text="Автоматический" GridPane.columnSpan="2" GridPane.rowIndex="1">
               <toggleGroup>
-                <ToggleGroup fx:id="exeMode_TG"/>
+                <ToggleGroup fx:id="exeMode_TG" />
               </toggleGroup>
             </RadioButton>
-            <RadioButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#exeModeTact_RB_action" text="Пошаговый" toggleGroup="$exeMode_TG" GridPane.columnSpan="2" GridPane.rowIndex="2"/>
+            <RadioButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#exeModeTact_RB_action" text="Пошаговый" toggleGroup="$exeMode_TG" GridPane.columnSpan="2" GridPane.rowIndex="2" />
             <RadioButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#modelingLevelMicroProgram_RB_action" selected="true" text="Микропрограмма" GridPane.columnSpan="2" GridPane.rowIndex="4">
               <toggleGroup>
-                <ToggleGroup fx:id="modelingLevel_TG"/>
+                <ToggleGroup fx:id="modelingLevel_TG" />
               </toggleGroup>
             </RadioButton>
-            <RadioButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#modelingLevelUAOA_RB_action" text="Взаимодействие УА и ОА" toggleGroup="$modelingLevel_TG" GridPane.columnSpan="2" GridPane.rowIndex="5"/>
+            <RadioButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#modelingLevelUAOA_RB_action" text="Взаимодействие УА и ОА" toggleGroup="$modelingLevel_TG" GridPane.columnSpan="2" GridPane.rowIndex="5" />
           </GridPane>
           <Label alignment="CENTER" text="Ход вычисления" GridPane.columnSpan="2" GridPane.rowIndex="7">
             <font>
-              <Font name="System Bold" size="18.0"/>
+              <Font name="System Bold" size="18.0" />
             </font>
           </Label>
           <Label text="Регистр множимого" GridPane.columnIndex="1" GridPane.rowIndex="8">
             <font>
-              <Font name="System Italic" size="14.0"/>
+              <Font name="System Italic" size="14.0" />
             </font>
           </Label>
-          <Label text="A₂" GridPane.rowIndex="9"/>
-          <fx:include fx:id="a2Process_TV" source="item_16_register_table_view.fxml" GridPane.columnIndex="1" GridPane.rowIndex="9"/>
+          <Label text="A₂" GridPane.rowIndex="9" />
+          <fx:include fx:id="a2Process_TV" source="item_16_register_table_view.fxml" GridPane.columnIndex="1" GridPane.rowIndex="9" />
           <Label text="Регистр множителя" GridPane.columnIndex="1" GridPane.rowIndex="10">
             <font>
-              <Font name="System Italic" size="14.0"/>
+              <Font name="System Italic" size="14.0" />
             </font>
           </Label>
-          <Label text="B₂" GridPane.rowIndex="11"/>
-          <fx:include fx:id="b2Process_TV" source="item_16_register_table_view.fxml" GridPane.columnIndex="1" GridPane.rowIndex="11"/>
+          <Label text="B₂" GridPane.rowIndex="11" />
+          <fx:include fx:id="b2Process_TV" source="item_16_register_table_view.fxml" GridPane.columnIndex="1" GridPane.rowIndex="11" />
           <Label text="Регистр произведения" GridPane.columnIndex="1" GridPane.rowIndex="13">
             <font>
-              <Font name="System Italic" size="14.0"/>
+              <Font name="System Italic" size="14.0" />
             </font>
           </Label>
-          <Label text="C₂" GridPane.rowIndex="14"/>
-          <fx:include fx:id="c2Result_TV" source="item_31_register_table_view.fxml" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="14"/>
+          <Label text="C₂" GridPane.rowIndex="14" />
+          <fx:include fx:id="c2Result_TV" source="item_31_register_table_view.fxml" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="14" />
           <Label text="Результат" GridPane.columnSpan="2" GridPane.rowIndex="12">
             <font>
-              <Font name="System Bold" size="18.0"/>
+              <Font name="System Bold" size="18.0" />
             </font>
           </Label>
-          <Label text="С₁₀" GridPane.rowIndex="15"/>
-          <TextField fx:id="c2Result_TF" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="15"/>
+          <Label text="С₁₀" GridPane.rowIndex="15" />
+          <TextField fx:id="c2Result_TF" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="15" />
           <GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" vgap="5.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="8" GridPane.rowSpan="2">
             <columnConstraints>
-              <ColumnConstraints hgrow="SOMETIMES"/>
-              <ColumnConstraints hgrow="SOMETIMES"/>
-              <ColumnConstraints/>
+              <ColumnConstraints hgrow="SOMETIMES" />
+              <ColumnConstraints hgrow="SOMETIMES" />
+              <ColumnConstraints />
             </columnConstraints>
             <rowConstraints>
-              <RowConstraints vgrow="SOMETIMES"/>
-              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES"/>
+              <RowConstraints vgrow="SOMETIMES" />
+              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <Label text="Регистр счетчика" GridPane.columnIndex="1" GridPane.columnSpan="2">
               <font>
-                <Font name="System Italic" size="14.0"/>
+                <Font name="System Italic" size="14.0" />
               </font>
             </Label>
-            <fx:include source="item_3_register_table_view.fxml" fx:id="ch2Process_TV" maxWidth="62.0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-            <Label text="СЧ₂" GridPane.rowIndex="1"/>
+            <fx:include fx:id="ch2Process_TV" maxWidth="62.0" source="item_3_register_table_view.fxml" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="СЧ₂" GridPane.rowIndex="1" />
           </GridPane>
-          <HBox.margin>
-            <Insets/>
-          </HBox.margin>
           <padding>
-            <Insets bottom="20.0" left="10.0" right="10.0" top="10.0"/>
+            <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
           </padding>
         </GridPane>
-      </HBox>
+      </children>
     </HBox>
   </center>
 </BorderPane>
