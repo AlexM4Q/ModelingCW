@@ -76,8 +76,8 @@
           <Label text="A₁₀" GridPane.rowIndex="3" />
           <TextField fx:id="a10Input_TF" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
           <Label text="A₂" GridPane.rowIndex="2" />
-          <fx:include fx:id="a2Input_TV" source="item_16_register_table_view.fxml" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-          <fx:include fx:id="b2Input_TV" source="item_16_register_table_view.fxml" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+          <fx:include fx:id="a2Input_TV" source="item_16_register_table_view.fxml" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+          <fx:include fx:id="b2Input_TV" source="item_16_register_table_view.fxml" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS" />
           <Label text="Множитель" GridPane.columnIndex="1" GridPane.rowIndex="4">
             <font>
               <Font name="System Italic" size="14.0" />
@@ -150,21 +150,21 @@
             </font>
           </Label>
           <Label text="A₂" GridPane.rowIndex="9" />
-          <fx:include fx:id="a2Process_TV" source="item_16_register_table_view.fxml" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+          <fx:include fx:id="a2Process_TV" source="item_16_register_table_view.fxml" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="9" GridPane.vgrow="ALWAYS" />
           <Label text="Регистр множителя" GridPane.columnIndex="1" GridPane.rowIndex="10">
             <font>
               <Font name="System Italic" size="14.0" />
             </font>
           </Label>
           <Label text="B₂" GridPane.rowIndex="11" />
-          <fx:include fx:id="b2Process_TV" source="item_16_register_table_view.fxml" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+          <fx:include fx:id="b2Process_TV" source="item_16_register_table_view.fxml" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="11" GridPane.vgrow="ALWAYS" />
           <Label text="Регистр произведения" GridPane.columnIndex="1" GridPane.rowIndex="13">
             <font>
               <Font name="System Italic" size="14.0" />
             </font>
           </Label>
           <Label text="C₂" GridPane.rowIndex="14" />
-          <fx:include fx:id="c2Result_TV" source="item_31_register_table_view.fxml" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="14" />
+          <fx:include fx:id="c2Result_TV" source="item_31_register_table_view.fxml" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="14" GridPane.vgrow="ALWAYS" />
           <Label text="Результат" GridPane.columnSpan="2" GridPane.rowIndex="12">
             <font>
               <Font name="System Bold" size="18.0" />

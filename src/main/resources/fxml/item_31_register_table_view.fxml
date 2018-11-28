@@ -2,166 +2,165 @@
 
 <?import javafx.scene.control.cell.*?>
 <?import javafx.scene.control.*?>
-<TableView xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml"
-           maxWidth="-Infinity" stylesheets="@../css/register-table-view-styles.css">
+<TableView maxWidth="-Infinity" stylesheets="@../css/register-table-view-styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
   <columns>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="30">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="30">
       <cellValueFactory>
-        <PropertyValueFactory property="col30"/>
+        <PropertyValueFactory property="col30" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="29">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="29">
       <cellValueFactory>
-        <PropertyValueFactory property="col29"/>
+        <PropertyValueFactory property="col29" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="28">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="28">
       <cellValueFactory>
-        <PropertyValueFactory property="col28"/>
+        <PropertyValueFactory property="col28" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="27">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="27">
       <cellValueFactory>
-        <PropertyValueFactory property="col27"/>
+        <PropertyValueFactory property="col27" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="26">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="26">
       <cellValueFactory>
-        <PropertyValueFactory property="col26"/>
+        <PropertyValueFactory property="col26" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="25">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="25">
       <cellValueFactory>
-        <PropertyValueFactory property="col25"/>
+        <PropertyValueFactory property="col25" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="24">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="24">
       <cellValueFactory>
-        <PropertyValueFactory property="col24"/>
+        <PropertyValueFactory property="col24" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="23">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="23">
       <cellValueFactory>
-        <PropertyValueFactory property="col23"/>
+        <PropertyValueFactory property="col23" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="22">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="22">
       <cellValueFactory>
-        <PropertyValueFactory property="col22"/>
+        <PropertyValueFactory property="col22" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="21">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="21">
       <cellValueFactory>
-        <PropertyValueFactory property="col21"/>
+        <PropertyValueFactory property="col21" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="20">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="20">
       <cellValueFactory>
-        <PropertyValueFactory property="col20"/>
+        <PropertyValueFactory property="col20" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="19">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="19">
       <cellValueFactory>
-        <PropertyValueFactory property="col19"/>
+        <PropertyValueFactory property="col19" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="18">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="18">
       <cellValueFactory>
-        <PropertyValueFactory property="col18"/>
+        <PropertyValueFactory property="col18" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="17">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="17">
       <cellValueFactory>
-        <PropertyValueFactory property="col17"/>
+        <PropertyValueFactory property="col17" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="16">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="16">
       <cellValueFactory>
-        <PropertyValueFactory property="col16"/>
+        <PropertyValueFactory property="col16" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="15">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="15">
       <cellValueFactory>
-        <PropertyValueFactory property="col15"/>
+        <PropertyValueFactory property="col15" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="14">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="14">
       <cellValueFactory>
-        <PropertyValueFactory property="col14"/>
+        <PropertyValueFactory property="col14" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="13">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="13">
       <cellValueFactory>
-        <PropertyValueFactory property="col13"/>
+        <PropertyValueFactory property="col13" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="12">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="12">
       <cellValueFactory>
-        <PropertyValueFactory property="col12"/>
+        <PropertyValueFactory property="col12" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="11">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="11">
       <cellValueFactory>
-        <PropertyValueFactory property="col11"/>
+        <PropertyValueFactory property="col11" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="10">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="10">
       <cellValueFactory>
-        <PropertyValueFactory property="col10"/>
+        <PropertyValueFactory property="col10" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="9">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="9">
       <cellValueFactory>
-        <PropertyValueFactory property="col9"/>
+        <PropertyValueFactory property="col9" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="8">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="8">
       <cellValueFactory>
-        <PropertyValueFactory property="col8"/>
+        <PropertyValueFactory property="col8" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="7">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="7">
       <cellValueFactory>
-        <PropertyValueFactory property="col7"/>
+        <PropertyValueFactory property="col7" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="6">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="6">
       <cellValueFactory>
-        <PropertyValueFactory property="col6"/>
+        <PropertyValueFactory property="col6" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="5">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="5">
       <cellValueFactory>
-        <PropertyValueFactory property="col5"/>
+        <PropertyValueFactory property="col5" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="4">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="4">
       <cellValueFactory>
-        <PropertyValueFactory property="col4"/>
+        <PropertyValueFactory property="col4" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="3">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="3">
       <cellValueFactory>
-        <PropertyValueFactory property="col3"/>
+        <PropertyValueFactory property="col3" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="2">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="2">
       <cellValueFactory>
-        <PropertyValueFactory property="col2"/>
+        <PropertyValueFactory property="col2" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="1">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="1">
       <cellValueFactory>
-        <PropertyValueFactory property="col1"/>
+        <PropertyValueFactory property="col1" />
       </cellValueFactory>
     </TableColumn>
-    <TableColumn maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" text="0">
+    <TableColumn editable="false" maxWidth="20.0" minWidth="-Infinity" prefWidth="20.0" resizable="false" sortable="false" text="0">
       <cellValueFactory>
-        <PropertyValueFactory property="col0"/>
+        <PropertyValueFactory property="col0" />
       </cellValueFactory>
     </TableColumn>
   </columns>
   <columnResizePolicy>
-    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
   </columnResizePolicy>
 </TableView>
