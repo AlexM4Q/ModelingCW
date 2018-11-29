@@ -5,7 +5,7 @@ import com.modeling.cw.constants.ModelingLevel;
 import com.modeling.cw.entities.logic.MicroProgram;
 import com.modeling.cw.entities.rows.Register16Row;
 import com.modeling.cw.entities.rows.Register31Row;
-import com.modeling.cw.entities.rows.Register3Row;
+import com.modeling.cw.entities.rows.Register4Row;
 import com.modeling.cw.utils.MathUtils;
 import com.modeling.cw.utils.UiUtils;
 import javafx.fxml.FXML;
@@ -67,7 +67,7 @@ public final class MainController {
      * Таблица двоичного представления регистра счетчика
      */
     @FXML
-    private TableView<Register3Row> ch2Process_TV;
+    private TableView<Register4Row> ch2Process_TV;
 
     /**
      * Режим выполнения
@@ -91,7 +91,7 @@ public final class MainController {
         a2Process_TV.getItems().add(new Register16Row());
         b2Process_TV.getItems().add(new Register16Row());
         c2Result_TV.getItems().add(new Register31Row());
-        ch2Process_TV.getItems().add(new Register3Row());
+        ch2Process_TV.getItems().add(new Register4Row());
 
         UiUtils.prepareRegisterTable(a2Input_TV, () -> convertBinaryToDecimal(a2Input_TV, a10Input_TF));
         UiUtils.prepareRegisterTable(b2Input_TV, () -> convertBinaryToDecimal(b2Input_TV, b10Input_TF));

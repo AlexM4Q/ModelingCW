@@ -187,7 +187,7 @@
                 <Font name="System Italic" size="14.0" />
               </font>
             </Label>
-            <fx:include fx:id="ch2Process_TV" maxWidth="62.0" source="item_3_register_table_view.fxml" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <fx:include fx:id="ch2Process_TV" maxWidth="82.0" source="item_4_register_table_view.fxml" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label text="СЧ₂" GridPane.rowIndex="1" />
           </GridPane>
           <padding>

@@ -2,13 +2,15 @@ package com.modeling.cw.entities.rows;
 
 import javafx.beans.property.SimpleIntegerProperty;
 
-public class Register3Row {
+public class Register4Row {
 
+    private final SimpleIntegerProperty col3;
     private final SimpleIntegerProperty col2;
     private final SimpleIntegerProperty col1;
     private final SimpleIntegerProperty col0;
 
-    public Register3Row() {
+    public Register4Row() {
+        this.col3 = new SimpleIntegerProperty(0);
         this.col2 = new SimpleIntegerProperty(0);
         this.col1 = new SimpleIntegerProperty(0);
         this.col0 = new SimpleIntegerProperty(0);
@@ -18,10 +20,14 @@ public class Register3Row {
         setCol0(0);
         setCol1(0);
         setCol2(0);
+        setCol3(0);
     }
 
     public void set(final int index, final int value) {
         switch (index) {
+            case 3:
+                setCol3(value);
+                break;
             case 2:
                 setCol2(value);
                 break;
@@ -34,6 +40,14 @@ public class Register3Row {
             default:
                 throw new IllegalArgumentException("Невозможно найти колонку. Индекс колонки: " + index);
         }
+    }
+
+    public int getCol3() {
+        return col3.get();
+    }
+
+    public void setCol3(int col3) {
+        this.col3.set(col3);
     }
 
     public int getCol2() {

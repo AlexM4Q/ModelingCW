@@ -3,7 +3,7 @@ package com.modeling.cw.entities.rows;
 import com.modeling.cw.utils.MathUtils;
 import javafx.beans.property.SimpleIntegerProperty;
 
-public class Register16Row extends Register3Row {
+public class Register16Row extends Register4Row {
 
     private final SimpleIntegerProperty col15;
     private final SimpleIntegerProperty col14;
@@ -17,7 +17,6 @@ public class Register16Row extends Register3Row {
     private final SimpleIntegerProperty col6;
     private final SimpleIntegerProperty col5;
     private final SimpleIntegerProperty col4;
-    private final SimpleIntegerProperty col3;
 
     public Register16Row() {
         super();
@@ -33,7 +32,6 @@ public class Register16Row extends Register3Row {
         this.col6 = new SimpleIntegerProperty(0);
         this.col5 = new SimpleIntegerProperty(0);
         this.col4 = new SimpleIntegerProperty(0);
-        this.col3 = new SimpleIntegerProperty(0);
     }
 
     public void clear() {
@@ -49,7 +47,6 @@ public class Register16Row extends Register3Row {
         setCol6(0);
         setCol5(0);
         setCol4(0);
-        setCol3(0);
         super.clear();
     }
 
@@ -90,9 +87,6 @@ public class Register16Row extends Register3Row {
                 break;
             case 4:
                 setCol4(value);
-                break;
-            case 3:
-                setCol3(value);
                 break;
             default:
                 super.set(index, value);
@@ -224,14 +218,6 @@ public class Register16Row extends Register3Row {
 
     public void setCol4(int col4) {
         this.col4.set(col4);
-    }
-
-    public int getCol3() {
-        return col3.get();
-    }
-
-    public void setCol3(int col3) {
-        this.col3.set(col3);
     }
 
 }
