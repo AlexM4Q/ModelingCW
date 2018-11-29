@@ -13,33 +13,77 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
+/**
+ * Обработчик формы
+ */
 public final class MainController {
 
+    /**
+     * Таблица двоичного представления множимого
+     */
     @FXML
     private TableView<Register16Row> a2Input_TV;
+    /**
+     * Поле десятичного представления множимого
+     */
     @FXML
     private TextField a10Input_TF;
+    /**
+     * Таблица двоичного представления множителя
+     */
     @FXML
     private TableView<Register16Row> b2Input_TV;
+    /**
+     * Поле десятичного представления множителя
+     */
     @FXML
     private TextField b10Input_TF;
+    /**
+     * Таблица двоичного представления регистров множимого
+     */
     @FXML
     private TableView<Register16Row> a2Process_TV;
+    /**
+     * Таблица двоичного представления регистров множителя
+     */
     @FXML
     private TableView<Register16Row> b2Process_TV;
+    /**
+     * Таблица двоичного представления результата
+     */
     @FXML
     private TableView<Register31Row> c2Result_TV;
+    /**
+     * Поле десятичного представления результата
+     */
     @FXML
     private TextField c2Result_TF;
+    /**
+     * Кнопка контроля процесса
+     */
     @FXML
     private Button processControl_B;
+    /**
+     * Таблица двоичного представления регистра счетчика
+     */
     @FXML
     private TableView<Register3Row> ch2Process_TV;
 
+    /**
+     * Режим выполнения
+     */
     private ExeMode exeMode;
 
+    /**
+     * Уровень моделирования ОУ
+     */
     private ModelingLevel modelingLevel;
 
+    /**
+     * Запускается после полной подготовки формы.
+     * Добавление строк регистров и назнчение логики нажатия
+     * на ячейки таблиц ввода множимого и множителя
+     */
     @FXML
     public void initialize() {
         a2Input_TV.getItems().add(new Register16Row());
@@ -53,6 +97,9 @@ public final class MainController {
         UiUtils.prepareRegisterTable(b2Input_TV, () -> convertBinaryToDecimal(b2Input_TV, b10Input_TF));
     }
 
+    /**
+     * Очистка всех таблиц и полей вывода
+     */
     @FXML
     private void clear_B_action() {
         a2Input_TV.getItems().get(0).clear();
@@ -77,6 +124,12 @@ public final class MainController {
         ch2Process_TV.refresh();
     }
 
+    /**
+     * Обработка кнопки контроля процесса
+     * Собираются данные из таблиц регистра ввода
+     * Обрабатываются в микропрограмме
+     * И выводят результат
+     */
     @FXML
     private void processControl_B_action() {
         final byte[] aBinary = a2Input_TV.getItems().get(0).toArray();
@@ -114,7 +167,7 @@ public final class MainController {
     }
 
     private static void convertBinaryToDecimal(final TableView<Register16Row> table, final TextField textField) {
-        textField.setText(String.valueOf(table.getItems().get(0).toInt()));
+        textField.setText(String.valueOf(table.getItems().get(0).toDouble()));
     }
 
 }

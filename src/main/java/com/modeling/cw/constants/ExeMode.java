@@ -1,7 +1,18 @@
 package com.modeling.cw.constants;
 
+/**
+ * Режим выполнения
+ */
 public enum ExeMode {
 
-    AUTO, TACT
+    /**
+     * Автоматический
+     */
+    AUTO,
+
+    /**
+     * Тактовый
+     */
+    TACT
 
 }

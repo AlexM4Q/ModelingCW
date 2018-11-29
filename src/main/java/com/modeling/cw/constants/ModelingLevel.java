@@ -1,7 +1,18 @@
 package com.modeling.cw.constants;
 
+/**
+ * Уровень моделирования ОУ
+ */
 public enum ModelingLevel {
 
-    MICRO_PROGRAM, UAOA
+    /**
+     * Микропрограмма
+     */
+    MICRO_PROGRAM,
+
+    /**
+     * Взаимодействие УА и ОА
+     */
+    UAOA
 
 }

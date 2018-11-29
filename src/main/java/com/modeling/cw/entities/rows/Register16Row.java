@@ -120,14 +120,20 @@ public class Register16Row extends Register3Row {
         return arr;
     }
 
-    public double toInt() {
+    public double toDouble() {
         return MathUtils.binaryToDouble(toArray());
     }
 
+    /**
+     * @return Значение колонки 15
+     */
     public int getCol15() {
         return col15.get();
     }
 
+    /**
+     * @param col15 Значение колонки 15
+     */
     public void setCol15(int col15) {
         this.col15.set(col15);
     }

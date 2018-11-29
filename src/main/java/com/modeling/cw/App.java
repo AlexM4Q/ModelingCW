@@ -8,10 +8,16 @@ import javafx.stage.Stage;
 
 public final class App extends Application {
 
+    /**
+     * Точка входа в программу
+     */
     public static void main(final String[] args) {
         launch(App.class, args);
     }
 
+    /**
+     * Точка входа в форму
+     */
     @Override
     public void start(final Stage primaryStage) throws Exception {
         final Parent root = FXMLLoader.load(getClass().getResource("/fxml/layout_main.fxml"));

@@ -8,6 +8,12 @@ public final class UiUtils {
 
     private static final String ZERO = "0";
 
+    /**
+     * Назначение логики переключения значений каждой ячейки в таблице ввода
+     *
+     * @param table Таблица ввода
+     * @param task  Действие, выполняемое после обработки клика
+     */
     public static void prepareRegisterTable(final TableView<Register16Row> table, final Runnable task) {
         final Register16Row register16Row = table.getItems().get(0);
         table.getColumns().forEach(column -> column.setCellFactory(p -> {

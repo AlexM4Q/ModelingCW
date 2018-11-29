@@ -37,6 +37,9 @@ public final class MicroProgram {
         this.bmBinary = new byte[bBinary.length];
     }
 
+    /**
+     * @return Результат вычисления
+     */
     public byte[] execute() {
         if (x0()) {
             if (x1()) {
